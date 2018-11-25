@@ -133,6 +133,7 @@ def funcBrightness():#사진 명도
     label2 = Label(window,text = '명도: '+ str(value))
     label2.pack(side = BOTTOM)
     newPhoto.modulate(value,100,100)
+    # ImageMagic의 함수 modulate(명도, 채도, 색조) 이며 기본값이 100
     newX = newPhoto.width
     newY = newPhoto.height
     displayImage(newPhoto,newX,newY)
